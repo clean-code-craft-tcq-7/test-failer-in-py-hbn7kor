@@ -1,14 +1,7 @@
-
-def size(cms):
+def size(cms: int):
     if cms < 38:
-        return 'S'
-    elif cms > 38 and cms < 42:
-        return 'M'
+        return "S"
+    elif cms > 42:
+        return "L"
     else:
-        return 'L'
-
-
-assert(size(37) == 'S')
-assert(size(40) == 'M')
-assert(size(43) == 'L')
-print("All is well (maybe!)")
+        return "M"
